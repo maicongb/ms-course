@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 //o name tem que ter o mesmo nome que está
 //no application.properties que será
 //localhost:8001/workers
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "workers")
+@FeignClient(name = "hr-worker", path = "workers")
 public interface WorkerFeignClient {
 
     @GetMapping(value = "/{id}")
