@@ -11,8 +11,8 @@
     <groupId>com.maicon</groupId>
     <artifactId>hr-payroll</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hr-worker</name>
-    <description>Worker Microservice</description>
+    <name>hr-payroll</name>
+    <description>Payroll Microservice</description>
 
     <properties>
         <java.version>11</java.version>
@@ -49,12 +49,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
-        <!--		<dependency>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>
-                        spring-cloud-starter-netflix-eureka-client
-                    </artifactId>
-                </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>
+                spring-cloud-starter-netflix-eureka-client
+            </artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
