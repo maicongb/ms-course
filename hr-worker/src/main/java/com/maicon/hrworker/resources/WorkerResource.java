@@ -27,8 +27,15 @@ public class WorkerResource {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Worker> findById(@PathVariable Long id) {
+    public ResponseEntity<Worker> findById(@PathVariable Long id)  {
         Optional<Worker> worker = workerRepository.findById(id);
+
+        /* Para testar se o tempo de resposta está certo.
+        try {
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }*/
 
         return ResponseEntity.ok(worker.get());
     }
